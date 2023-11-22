@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = "https://api.unsplash.com/"
-const URL_PATH = "search/photos"
-const API_KEY = ""
+const BASE_URL = "https://api.unsplash.com/";
+const URL_PATH = "search/photos";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 async function searchImages(searchTerm){
     const response = await axios.get(BASE_URL + URL_PATH, {
