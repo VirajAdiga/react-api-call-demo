@@ -1,8 +1,10 @@
 import "../css/Image.css";
 
-function Image(){
+function Image({ image }){
     return (
-        <div></div>
+        <div>
+            <img src={image.urls.small} alt={image.alt_description}/>
+        </div>
     );
 }
 
